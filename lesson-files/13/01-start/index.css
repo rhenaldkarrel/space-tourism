@@ -114,7 +114,7 @@ select {
 }
 
 .flow > *:where(:not(:first-child)) {
-	/* equal to *:not(:first-child) -> best approach *:where(:not(:first-child)). We can use :is too, but in term of specificity, :where is better bc its not adding any specifity */
+	/* *+* is equal to *:not(:first-child) -> best approach *:where(:not(:first-child)). We can use :is too, but in term of specificity, :where is better bc its not adding any specifity */
 	/* equal to *:not(:last-child) but with using the margin-bottom instead */
 	margin-top: var(--flow-space, 1rem);
 	outline: 1px solid red;
